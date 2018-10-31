@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+<nav class="orange" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">5d Hausaufgabentabelle</a>
+        <ul class="right ">
+            <li><a href="admin/">Admin-Login</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    {% block title %}
+    {% endblock %}
+
+    <div class="container">
+
+        {% block content %}
+        {% endblock %}
+
+        <br>
+        <p>Designed, programmiert von <a href="https://niels-dingsbums.de">Niels Schlegel</a>. Nach dem Vorbild der <a
+                href="https://niels-dingsbums.de/ha">8c Hausaufgabentabelle</a>.</p>
+    </div>
+</main>
+</body>
+</html>
